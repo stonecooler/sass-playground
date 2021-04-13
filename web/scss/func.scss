@@ -1,0 +1,18 @@
+@function meinefunktion($value1, $value2) {
+    $result: 1;
+    @for $_ from $value1 through $value2 {
+      $result: $result + $_;
+    }
+    // @warn "Hello";
+    @return $result + px;
+ }
+
+@function wenn($flag,$prop){
+  $re: '';
+  @if $flag > 10 {
+    $re: $prop;
+  } @else {
+    $re: top;
+  }
+  @return $re;
+}

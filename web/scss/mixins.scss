@@ -1,0 +1,11 @@
+
+@mixin themixin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin themixin2($property, $value){
+  #{$property}: $value;
+}
+
+

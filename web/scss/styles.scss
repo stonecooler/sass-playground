@@ -1,0 +1,80 @@
+body {
+    background-color: greenyellow;
+
+    p {
+        border: 2px solid gold;
+    }
+}
+
+div.firstClass {
+    font-size: 12px;
+
+    &.secondClass {
+        font-weight: bold;
+    }
+
+    & .thirdClass {
+        background-color: greenyellow;
+
+        & .fourthClass {
+            font-family: 'Courier New', Courier, monospace;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    span {
+        &__element {
+            font-style: italic;
+        }
+    }
+
+}
+
+// -----------------------------
+
+$color1: #ff8833;
+$color2: #003377;
+.h1 {
+    color: $color1;
+}
+
+$size1: 16px;
+h1 {
+    font-size: $size1;
+
+    span {
+        $color2: #ff0033;
+        display: inline-block;
+        background-color: $color2;
+    }
+}
+
+p.para2 {
+    border-color: $color2;
+}
+
+$primary: #81899b;
+$accent: #302e24;
+$warn: #dfa612;
+
+div {
+  --primary: #{$primary};
+  --accent: #{$accent};
+  --warn: #{$warn};
+
+  --whatever: $primary;
+
+    span {
+        color: var(--primary);
+    }
+}
+
+// -----------------------------
+
+// Deprecated - überall möglich
+@import 'theimport';
+
+// Besser in Zukunft --> styles2.css <-- nur am Anfang einer Datei
+// @use 'theuse';

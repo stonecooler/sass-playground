@@ -1,0 +1,55 @@
+body {
+  background-color: greenyellow;
+}
+body p {
+  border: 2px solid gold;
+}
+
+div.firstClass {
+  font-size: 12px;
+}
+div.firstClass.secondClass {
+  font-weight: bold;
+}
+div.firstClass .thirdClass {
+  background-color: greenyellow;
+}
+div.firstClass .thirdClass .fourthClass {
+  font-family: "Courier New", Courier, monospace;
+}
+div.firstClass .thirdClass .fourthClass:hover {
+  text-decoration: underline;
+}
+div.firstClass span__element {
+  font-style: italic;
+}
+
+.h1 {
+  color: #ff8833;
+}
+
+h1 {
+  font-size: 16px;
+}
+h1 span {
+  display: inline-block;
+  background-color: #ff0033;
+}
+
+p.para2 {
+  border-color: #003377;
+}
+
+div {
+  --primary: #81899b;
+  --accent: #302e24;
+  --warn: #dfa612;
+  --whatever: $primary;
+}
+div span {
+  color: var(--primary);
+}
+
+.vomimport ul {
+  padding: 0em;
+}
